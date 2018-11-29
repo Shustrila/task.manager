@@ -5,7 +5,25 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    users: [
+      {
+        name: 'shystrila'
+      },
+      {
+        name: 'blabla'
+      },
+      {
+        name: 'lalala'
+      },
+      {
+        name: 'dhbvbshdj'
+      }
+    ],
     task: [
+      {
+        name: 'scsc',
+        desc: 'scscsc'
+      },
       {
         name: 'scsc',
         desc: 'scscsc'
@@ -14,5 +32,9 @@ export default new Vuex.Store({
   },
   mutations: {},
   actions: {},
-  getters: {}
+  getters: {
+    getUsers () {
+      return this.users
+    }
+  }
 })
