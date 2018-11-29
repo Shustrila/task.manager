@@ -6,7 +6,7 @@
         </router-link>
         <div class="header__auth">
             <router-link class="header__auth-login" to="/login">
-              <font-awesome-icon icon="sign-in-alt" />login
+              <font-awesome-icon class="header__auth-icon" icon="sign-in-alt" />login
             </router-link>
             <router-link class="header__auth-registration" to="/registration">
                 registration
@@ -49,12 +49,17 @@ export default {
 
     &__auth{
       display: flex;
-
+      &-icon{
+        margin-right: 10px;
+      }
       &-login{
         margin-right: 10px;
         font-size: 20px;
         color: #ffffff;
         text-decoration: none;
+      }
+      &-login:hover{
+        color: #333333;
       }
       &-registration{
         font-size: 20px;
